@@ -1,0 +1,13 @@
+{% extends "template/base/index.html" %}
+
+{% set title = lc["title"] %}
+{% block content %}
+    <div class="route">
+        <p><span>»</span>{{ lc["route"] }}</p>
+        <div class="clear"></div>
+    </div>
+    <ul class="menu">
+        <li><a href="{{ url_path("index", path="error") }}">{{ lc["not_found"] }}</a></li>
+        <li><a href="{{ url_path("index", path="server") }}">{{ lc["server_error"] }}</a></li>
+    </ul>
+{% endblock %}

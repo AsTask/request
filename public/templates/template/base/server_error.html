@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>{{ lt["title"] }}</title>
+    <link rel="stylesheet" href="{{ static('static', path='/base/css/error.css') }}">
+</head>
+<body>
+<div class="header">
+    <div class="container"><p class="text">{{ lt["header"] }}</p></div>
+</div>
+<div class="container">
+    <div class="content">
+        <p>{{ lt["content"] }}</p>
+        <p><a href="{{ href_main }}">{{ lt["back"] }}</a></p>
+    </div>
+</div>
+</body>
+</html>
